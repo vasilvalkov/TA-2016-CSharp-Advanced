@@ -18,72 +18,71 @@ class SequenceInMatrix
         int maxLen = 1;
         int row = 0;
         int col = 0;
+        string currentValue = string.Empty;
         // Find longest sequence
-        while (row < dimSizes[0] - 1 && col < dimSizes[1])
+        for (int i = 0; i < dimSizes[0]; i++)
         {
-            if (col > 0)
+            for (int j = 0; j < dimSizes[1]; j++)
             {
-                if (matrix[row][col] == matrix[row][col - 1])
-                {   // Element at diagonal to the left is equal to current
-                    //col++;      // Move right to it and make it current
-                    currentLen++;
-                    if (maxLen < currentLen)
-                    {   // Increment maximal found sequence
-                        maxLen = currentLen;
-                    }
-                }
-            }
-            if (col != dimSizes[1] - 1)
-            {                
-                if (matrix[row][col] == matrix[row][col + 1])
-                {   // Element to the rigth is equal
-                    col++;      // Move right to it and make it current
-                    currentLen++;
-                    if (maxLen < currentLen)
-                    {   // Increment maximal found sequence
-                        maxLen = currentLen;
-                    }
-                }
-                else if (matrix[row][col] == matrix[row + 1][col])
-                {   // Element below is equal to current
-                    row++;      // Move down to it and make it current
-                    currentLen++;
-                    if (maxLen < currentLen)
+                currentValue = matrix[i][j];
+                currentLen = 1;
+                while (row < dimSizes[0] - 1 &&
+                       col < dimSizes[1] &&
+                       matrix[row][col] == currentValue)
+                {   // Matching value found
+                    if (col != dimSizes[1] - 1)
                     {
-                        maxLen = currentLen;
+                        if (currentValue == matrix[row][col + 1])
+                        {   // Element to the rigth is equal
+                            col++;      // Move right to it and make it current
+                            currentLen++;
+                            if (maxLen < currentLen)
+                            {   // Increment maximal found sequence
+                                maxLen = currentLen;
+                            }
+                        }
+                        else if (currentValue == matrix[row + 1][col])
+                        {   // Element below is equal to current
+                            row++;      // Move down to it and make it current
+                            currentLen++;
+                            if (maxLen < currentLen)
+                            {
+                                maxLen = currentLen;
+                            }
+                        }
+                        else if (currentValue == matrix[row + 1][col + 1])
+                        {   // Element at diagonal is equal to current
+                            row++; col++;     // Move diagonally to it and make it current
+                            currentLen++;
+                            if (maxLen < currentLen)
+                            {
+                                maxLen = currentLen;
+                            }
+                        }
+                        else
+                        {   // No equal elemnts. Go one column ahead and start a new sequence
+                            currentLen = 1;
+                            col++;
+                        }
                     }
-                }
-                else if (matrix[row][col] == matrix[row + 1][col + 1])
-                {   // Element at diagonal to the right is equal to current
-                    row++; col++;     // Move diagonally to it and make it current
-                    currentLen++;
-                    if (maxLen < currentLen)
-                    {
-                        maxLen = currentLen;
+                    else
+                    {   // Last column reached
+                        if (currentValue == matrix[row + 1][col])
+                        {   // Element below is equal to current
+                            row++;      // Move down to it and make it current
+                            currentLen++;
+                            if (maxLen < currentLen)
+                            {
+                                maxLen = currentLen;
+                            }
+                        }
+                        else
+                        {   // Element below is not equal to current. Start from begining of new row
+                            currentLen = 1;
+                            row++;
+                            col = 0;
+                        }
                     }
-                }
-                else
-                {   // No equal elemnts. Go one column ahead and start a new sequence
-                    currentLen = 1;
-                    col++;
-                }
-            }
-            else
-            {   // Last column reached
-                if (matrix[row][col] == matrix[row + 1][col])
-                {   // Element below is equal to current
-                    row++;      // Move down to it and make it current
-                    currentLen++;
-                    if (maxLen < currentLen)
-                    {
-                        maxLen = currentLen;
-                    }
-                }
-                else
-                {   // Element below is not equal to current. Start from begining of new row
-                    currentLen = 1;
-                    row++;
-                    col = 0;
                 }
             }
         }
