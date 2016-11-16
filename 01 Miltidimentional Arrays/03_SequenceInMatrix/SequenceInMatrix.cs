@@ -3,11 +3,20 @@ using System.Linq;
 
 class SequenceInMatrix
 {
+    private static int IncreaseMaxLen(int current, int max)
+    {
+        if (max < current)
+        {   // Increment maximal found sequence
+            max = current;
+        }
+        return max;
+    }
+
     static void Main()
     {
-        // Initialize input and variables
-        string input = Console.ReadLine();                // Read input string
-        int[] dimSizes = input.Split(' ').Select(int.Parse).ToArray();   // Split input into array of numbers     
+        // INITIALIZE INPUT AND VARIABLES
+        string input = Console.ReadLine();                // Read matrix dimentions
+        int[] dimSizes = input.Split(' ').Select(int.Parse).ToArray();   // Save dimentions sizes - [0] for rows, [1] for cols
         string[][] matrix = new string[dimSizes[0]][];    // Declare matrix as array of arrays
         for (int i = 0; i < dimSizes[0]; i++)
         {   // Populate matrix
@@ -16,77 +25,66 @@ class SequenceInMatrix
         }
         int currentLen = 1;
         int maxLen = 1;
-        int row = 0;
-        int col = 0;
         string currentValue = string.Empty;
-        // Find longest sequence
-        for (int i = 0; i < dimSizes[0]; i++)
+        // FIND LONGEST SEQUENCE
+        for (int r = 0; r < dimSizes[0]; r++)
         {
-            for (int j = 0; j < dimSizes[1]; j++)
+            for (int c = 0; c < dimSizes[1]; c++)
             {
-                currentValue = matrix[i][j];
+                currentValue = matrix[r][c];
                 currentLen = 1;
-                while (row < dimSizes[0] - 1 &&
-                       col < dimSizes[1] &&
-                       matrix[row][col] == currentValue)
-                {   // Matching value found
-                    if (col != dimSizes[1] - 1)
-                    {
-                        if (currentValue == matrix[row][col + 1])
-                        {   // Element to the rigth is equal
-                            col++;      // Move right to it and make it current
-                            currentLen++;
-                            if (maxLen < currentLen)
-                            {   // Increment maximal found sequence
-                                maxLen = currentLen;
-                            }
-                        }
-                        else if (currentValue == matrix[row + 1][col])
-                        {   // Element below is equal to current
-                            row++;      // Move down to it and make it current
-                            currentLen++;
-                            if (maxLen < currentLen)
-                            {
-                                maxLen = currentLen;
-                            }
-                        }
-                        else if (currentValue == matrix[row + 1][col + 1])
-                        {   // Element at diagonal is equal to current
-                            row++; col++;     // Move diagonally to it and make it current
-                            currentLen++;
-                            if (maxLen < currentLen)
-                            {
-                                maxLen = currentLen;
-                            }
-                        }
-                        else
-                        {   // No equal elemnts. Go one column ahead and start a new sequence
-                            currentLen = 1;
-                            col++;
-                        }
+                int row = r;
+                int col = c;
+
+                while (col < dimSizes[1] - 1)
+                {   // Check to the right
+                    if (currentValue == matrix[row][col + 1])
+                    {   // Equal element found
+                        currentLen++;
+                        maxLen = IncreaseMaxLen(currentLen, maxLen);
                     }
-                    else
-                    {   // Last column reached
-                        if (currentValue == matrix[row + 1][col])
-                        {   // Element below is equal to current
-                            row++;      // Move down to it and make it current
-                            currentLen++;
-                            if (maxLen < currentLen)
-                            {
-                                maxLen = currentLen;
-                            }
-                        }
-                        else
-                        {   // Element below is not equal to current. Start from begining of new row
-                            currentLen = 1;
-                            row++;
-                            col = 0;
-                        }
+                    col++;  // Move right to it and make it current
+                }
+
+                col = c;
+
+                while (col < dimSizes[1] - 1 && row < dimSizes[0] - 1)
+                {   // Check right diagonal
+                    if (currentValue == matrix[row + 1][col + 1])
+                    {   // Equal element found                    
+                        currentLen++;
+                        maxLen = IncreaseMaxLen(currentLen, maxLen);
                     }
+                    row++; col++;   // Move diagonally to it and make it current
+                }
+
+                row = r;
+                col = c;
+
+                while (row < dimSizes[0] - 1)
+                {   // Check below
+                    if (currentValue == matrix[row + 1][col])
+                    {   // Equal element found                    
+                        currentLen++;
+                        maxLen = IncreaseMaxLen(currentLen, maxLen);
+                    }
+                    row++;  // Move down to it and make it current
+                }
+
+                row = r;
+
+                while (row < dimSizes[0] - 1 && col > 0)
+                {   // Check left diagonal
+                    if (currentValue == matrix[row + 1][col - 1])
+                    {   // Equal element found                       
+                        currentLen++;
+                        maxLen = IncreaseMaxLen(currentLen, maxLen);
+                    }
+                    row++; col--;   // Move diagonally to it and make it current
                 }
             }
         }
-        // Print result
+        // PRINT RESULT
         Console.WriteLine(maxLen);
     }
 }

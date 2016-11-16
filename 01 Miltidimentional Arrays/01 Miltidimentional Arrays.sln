@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_BinarySearch", "04_Binar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_SortByStringLength", "05_SortByStringLength\05_SortByStringLength.csproj", "{245DCBA8-24ED-4EC1-B689-7BAE81B30EC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_MatrixClass", "06_MatrixClass\06_MatrixClass.csproj", "{EA089EAB-0571-46A9-930C-DD18FF9659A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{245DCBA8-24ED-4EC1-B689-7BAE81B30EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{245DCBA8-24ED-4EC1-B689-7BAE81B30EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{245DCBA8-24ED-4EC1-B689-7BAE81B30EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA089EAB-0571-46A9-930C-DD18FF9659A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA089EAB-0571-46A9-930C-DD18FF9659A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA089EAB-0571-46A9-930C-DD18FF9659A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA089EAB-0571-46A9-930C-DD18FF9659A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
