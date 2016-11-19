@@ -13,7 +13,7 @@ Homework: Methods
 1. [Number as array](./08_NumberAsArray)
 1. [Sorting array](./09_SortingArray)
 1. [N Factorial](./10_N_Factorial)
-1. [Adding polynomials](./11_AddingPolynomials)
+1. [Adding polynomials](./11_AddingPolinomials)
 1. [Subtracting polynomials](./12_SubtractingPolynomials)
 1. [Solve tasks](./13_SolveTasks)
 1. [Integer calculations](./14_IntegerCalculations)
