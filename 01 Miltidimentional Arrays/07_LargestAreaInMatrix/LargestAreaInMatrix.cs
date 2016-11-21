@@ -1,56 +1,111 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 class LargestAreaInMatrix
 {
-    static int IncreaseMaxLen(int current, int max)
-    {
-        if (max < current)
-        {   // Increment maximal found sequence
-            max = current;
-        }
-        return max;
-    }
-    
+    static int result = 0;
+    static int[,] matrix;
+
     static void Main()
     {
-        // INITIALIZE INPUT AND VARIABLES
-        string input = Console.ReadLine();
-        int[] dimSizes = input.Split(' ').Select(int.Parse).ToArray(); // [0] = rows, [1] = cols
-        int[,] matrix = new int[dimSizes[0], dimSizes[1]];
-        for (int row = 0; row < dimSizes[0]; row++)
-        {
-            int[] matrixRow = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            for (int i = 0; i < dimSizes[1]; i++)
-            {
-                matrix[row, i] = matrixRow[i];
-            }
-        }
-        int maxPathLen = 1;
+        matrix = GenerateMatrix();
+        LargestArea();
+        Console.WriteLine(result);
+    }
 
-        // FIND LARGEST AREA OF EQUAL ELEMENTS
-        for (int r = 0; r < dimSizes[0]; r++)
+    static void LargestArea()
+    {
+        Queue<int> rowIndex = new Queue<int>();
+        Queue<int> colIndex = new Queue<int>();
+        int counter = 0;
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
-            for (int c = 0; c < dimSizes[1]; c++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
-                int currentValue = matrix[r, c];
-                int matchValueRow = r;
-                int matchValueCol = c;
-                int pathLength = 0;
-
-                if (matrix[i, j] == currentValue &&
-                    Math.Abs(matchValueRow - i) < 2 &&
-                    Math.Abs(matchValueCol - j) < 2)
+                if (matrix[i, j] != int.MinValue)
                 {
-                    pathLength++;
-                    matchValueRow = i;
-                    matchValueCol = j;
-                    maxPathLen = IncreaseMaxLen(pathLength, maxPathLen);
+                    rowIndex.Enqueue(i);
+                    colIndex.Enqueue(j);
+                    GoRecursive(rowIndex, colIndex, counter, matrix[i, j]);
                 }
             }
         }
-        // Print result
-        Console.WriteLine(maxPathLen);
+    }
+
+    static void GoRecursive(Queue<int> rowIndex, Queue<int> colIndex,
+        int counter, int root)
+    {
+        int currentCount = rowIndex.Count;
+        for (int i = 0; i < currentCount; i++)
+        {
+            if (rowIndex.Peek() - 1 >= 0 &&
+                matrix[rowIndex.Peek() - 1, colIndex.Peek()] == root)
+            {
+                counter++;
+                rowIndex.Enqueue(rowIndex.Peek() - 1);
+                colIndex.Enqueue(colIndex.Peek());
+                matrix[rowIndex.Peek() - 1, colIndex.Peek()] = int.MinValue;
+            }
+
+            if (colIndex.Peek() + 1 < matrix.GetLength(1) &&
+                matrix[rowIndex.Peek(), colIndex.Peek() + 1] == root)
+            {
+                counter++;
+                rowIndex.Enqueue(rowIndex.Peek());
+                colIndex.Enqueue(colIndex.Peek() + 1);
+                matrix[rowIndex.Peek(), colIndex.Peek() + 1] = int.MinValue;
+            }
+
+            if (rowIndex.Peek() + 1 < matrix.GetLength(0) &&
+                matrix[rowIndex.Peek() + 1, colIndex.Peek()] == root)
+            {
+                counter++;
+                rowIndex.Enqueue(rowIndex.Peek() + 1);
+                colIndex.Enqueue(colIndex.Peek());
+                matrix[rowIndex.Peek() + 1, colIndex.Peek()] = int.MinValue;
+            }
+
+            if (colIndex.Peek() - 1 >= 0 &&
+                matrix[rowIndex.Peek(), colIndex.Peek() - 1] == root)
+            {
+                counter++;
+                rowIndex.Enqueue(rowIndex.Peek());
+                colIndex.Enqueue(colIndex.Peek() - 1);
+                matrix[rowIndex.Peek(), colIndex.Peek() - 1] = int.MinValue;
+            }
+            rowIndex.Dequeue();
+            colIndex.Dequeue();
+        }
+
+        if (rowIndex.Count != 0)
+        {
+            GoRecursive(rowIndex, colIndex, counter, root);
+        }
+        else
+        {
+            if (counter > result)
+            {
+                result = counter;
+            }
+            counter = 0;
+        }
+    }
+
+    static int[,] GenerateMatrix()
+    {
+        string[] matrixSize = Console.ReadLine().Split(' ');
+        int rows = int.Parse(matrixSize[0]);
+        int cols = int.Parse(matrixSize[1]);
+        int[,] matrix = new int[rows, cols];
+        string[] input = new string[cols];
+        for (int i = 0; i < rows; i++)
+        {
+            input = Console.ReadLine().Split(' ');
+            for (int j = 0; j < cols; j++)
+            {
+                matrix[i, j] = int.Parse(input[j]);
+            }
+        }
+        return matrix;
     }
 }
