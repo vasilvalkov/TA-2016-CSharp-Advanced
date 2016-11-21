@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_DecimalToHexadecimal", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_HexadecimalToDecimal", "04_HexadecimalToDecimal\04_HexadecimalToDecimal.csproj", "{B78A908C-D55C-4FD2-86E6-73C7ED999061}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_HexadecimalToBinary", "05_HexadecimalToBinary\05_HexadecimalToBinary.csproj", "{F8AF5FED-D1B0-48DF-B184-FC385818FBDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B78A908C-D55C-4FD2-86E6-73C7ED999061}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B78A908C-D55C-4FD2-86E6-73C7ED999061}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B78A908C-D55C-4FD2-86E6-73C7ED999061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8AF5FED-D1B0-48DF-B184-FC385818FBDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8AF5FED-D1B0-48DF-B184-FC385818FBDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8AF5FED-D1B0-48DF-B184-FC385818FBDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8AF5FED-D1B0-48DF-B184-FC385818FBDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
