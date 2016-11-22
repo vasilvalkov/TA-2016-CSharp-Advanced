@@ -3,7 +3,30 @@ using System.Collections.Generic;
 
 class BinaryToHex
 {
-    static char GetHexValue(string s)
+    private static Queue<string> SplitIntoChunksRightToLeft(string binNumber, int chunkSize)
+    {
+        Queue<string> binChunks = new Queue<string>();
+        string binChunk = string.Empty;
+
+        for (int i = binNumber.Length - 1; i >= 0; i--)
+        {
+            binChunk = binNumber[i] + binChunk;
+
+            if (binChunk.Length == chunkSize)
+            {
+                binChunks.Enqueue(binChunk);
+                binChunk = string.Empty;
+            }
+            if (i == 0 && binChunk != string.Empty)
+            {
+                binChunks.Enqueue(binChunk);
+            }
+        }
+
+        return binChunks;
+    }
+
+    private static char GetHexValue(string s)
     {
         char hexValue = ' ';
         switch (s)
@@ -29,7 +52,7 @@ class BinaryToHex
         return hexValue;
     }
 
-    static string BinToHex(string bin)
+    static string ConvertBinToHex(string bin)
     {
         var binSplit = SplitIntoChunksRightToLeft(bin, 4);
 
@@ -43,32 +66,9 @@ class BinaryToHex
         return hex;
     }
 
-    private static Queue<string> SplitIntoChunksRightToLeft(string binNumber, int chunkSize)
-    {
-        Queue<string> binChunks = new Queue<string>();
-        string binChunk = string.Empty;
-
-        for (int i = binNumber.Length - 1; i >= 0; i--)
-        {
-            binChunk = binNumber[i] + binChunk;
-
-            if (binChunk.Length == chunkSize)
-            {
-                binChunks.Enqueue(binChunk);
-                binChunk = string.Empty;
-            }
-            if (i == 0 && binChunk != string.Empty)
-            {
-                binChunks.Enqueue(binChunk);
-            }
-        }
-
-        return binChunks;
-    }
-
     static void Main()
     {
         string input = Console.ReadLine();
-        Console.WriteLine(BinToHex(input));
+        Console.WriteLine(ConvertBinToHex(input));
     }
 }
