@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_TriangleSurfaceBySideAnd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_TriangleSurfaceByThreeSides", "05_TriangleSurfaceByThreeSides\05_TriangleSurfaceByThreeSides.csproj", "{87836888-1B5B-4787-B46B-A7BEBC64E216}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_TriangleSurfaceByTwo SidesAndAnAngle", "06_TriangleSurfaceByTwo SidesAndAnAngle\06_TriangleSurfaceByTwo SidesAndAnAngle.csproj", "{B1996946-F82B-442F-A2AA-A4E27CA63E82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{87836888-1B5B-4787-B46B-A7BEBC64E216}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87836888-1B5B-4787-B46B-A7BEBC64E216}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87836888-1B5B-4787-B46B-A7BEBC64E216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1996946-F82B-442F-A2AA-A4E27CA63E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1996946-F82B-442F-A2AA-A4E27CA63E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1996946-F82B-442F-A2AA-A4E27CA63E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1996946-F82B-442F-A2AA-A4E27CA63E82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
