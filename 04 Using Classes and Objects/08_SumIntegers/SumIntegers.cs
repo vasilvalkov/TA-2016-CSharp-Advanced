@@ -17,7 +17,7 @@ namespace _09_SumIntegers
 
         static void Main()
         {
-            Console.WriteLine(  PrepareInput(Console.ReadLine()));
+            Console.WriteLine(PrepareInput(Console.ReadLine()));
         }
     }
 }
