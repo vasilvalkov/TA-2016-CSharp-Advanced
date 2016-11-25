@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_SubstringInText", "03_Su
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_ParseTags", "04_ParseTags\04_ParseTags.csproj", "{20139482-2379-4063-8C4E-0C931411550C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_StringLength", "05_StringLength\05_StringLength.csproj", "{E4B508AA-B5A3-4827-B357-B7159AEBAF3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{20139482-2379-4063-8C4E-0C931411550C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20139482-2379-4063-8C4E-0C931411550C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20139482-2379-4063-8C4E-0C931411550C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B508AA-B5A3-4827-B357-B7159AEBAF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B508AA-B5A3-4827-B357-B7159AEBAF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B508AA-B5A3-4827-B357-B7159AEBAF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B508AA-B5A3-4827-B357-B7159AEBAF3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
