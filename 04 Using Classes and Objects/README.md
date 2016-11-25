@@ -11,4 +11,3 @@ Homework: Using Classes and Objects
 1. [Triangle surface by two sides and an angle](./06_TriangleSurfaceByTwoSidesAndAnAngle)
 1. [Workdays](./07_Workdays)
 1. [Sum integers](./08_SumIntegers)
-1. [Arithmetical expressions](./09_ArithmeticalExpressions)
