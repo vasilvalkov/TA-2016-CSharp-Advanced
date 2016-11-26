@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_StringLength", "05_Strin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_EncodeAndDecode", "06_EncodeAndDecode\06_EncodeAndDecode.csproj", "{A98E74DB-BC70-4A96-92AE-26A05893AE49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_ExtractSentences", "07_ExtractSentences\07_ExtractSentences.csproj", "{C897FEF1-1D90-4304-AFD9-0F47AE4688A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A98E74DB-BC70-4A96-92AE-26A05893AE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A98E74DB-BC70-4A96-92AE-26A05893AE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A98E74DB-BC70-4A96-92AE-26A05893AE49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C897FEF1-1D90-4304-AFD9-0F47AE4688A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C897FEF1-1D90-4304-AFD9-0F47AE4688A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C897FEF1-1D90-4304-AFD9-0F47AE4688A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C897FEF1-1D90-4304-AFD9-0F47AE4688A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
