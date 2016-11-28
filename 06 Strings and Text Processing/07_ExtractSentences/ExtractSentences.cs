@@ -15,31 +15,31 @@ namespace _07_ExtractSentences
             Console.WriteLine(sentences);
         }
 
-        /// <summary>
-        /// Extracts sentences which contain given word and returns them in a new text
-        /// </summary>
-        /// <param name="word"></param>
-        /// <param name="text"></param>
-        /// <returns>new string containing only the sentences with the word</returns>
         private static string Extract(string word, string text)
         {
-
-            char[] splitChars = { ' ' };
+            char[] splitChars = { '.' };
             string[] splitText = text.Split(splitChars, StringSplitOptions.RemoveEmptyEntries);
             StringBuilder extractedText = new StringBuilder();
-            int index = 0;
 
-            for (int i = 0; i < splitText.Length; i++)
+            foreach (var sentence in splitText)
             {
-                if (string.Equals(splitText[i], word, StringComparison.OrdinalIgnoreCase))
-                {
-                    do
+                StringBuilder nonLetters = new StringBuilder();
+
+                foreach (var _char in sentence)
+                {   // Find non-letter characters in the sentence
+                    if (!char.IsLetter(_char))
                     {
-                        extractedText.Append(splitText[index]);
-                        extractedText.Append(' ');
-                        index++;
+                        nonLetters.Append(_char);
                     }
-                    while (splitText[index] != ".");
+                }
+                char[] splitBy = nonLetters.ToString().ToCharArray();
+                // Split sentence into word by all non-letter characters
+                string[] splitSentence = sentence.Split(splitBy, StringSplitOptions.RemoveEmptyEntries);
+                // Check if searched word matches any split-word in the sentence
+                if (Array.IndexOf(splitSentence, word) > -1)
+                {   // Match found
+                    extractedText.Append(sentence.Trim());
+                    extractedText.Append(". ");
                 }
             }
 
