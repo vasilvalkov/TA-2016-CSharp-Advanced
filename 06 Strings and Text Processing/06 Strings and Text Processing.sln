@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_ReplaceTags", "14_Replac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22_SeriesOfLetters", "22_SeriesOfLetters\22_SeriesOfLetters.csproj", "{3BA66DDC-BB40-44AA-B8A9-D3B5E117824F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_ForbiddenWords", "08_ForbiddenWords\08_ForbiddenWords.csproj", "{C1E22526-CDD6-405C-8DE7-532A4A862588}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{3BA66DDC-BB40-44AA-B8A9-D3B5E117824F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BA66DDC-BB40-44AA-B8A9-D3B5E117824F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BA66DDC-BB40-44AA-B8A9-D3B5E117824F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1E22526-CDD6-405C-8DE7-532A4A862588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E22526-CDD6-405C-8DE7-532A4A862588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E22526-CDD6-405C-8DE7-532A4A862588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E22526-CDD6-405C-8DE7-532A4A862588}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
