@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_ForbiddenWords", "08_For
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_FormatNumber", "10_FormatNumber\10_FormatNumber.csproj", "{1C719FDF-47AF-4123-9444-816165CBB39D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_ReverseSentence", "12_ReverseSentence\12_ReverseSentence.csproj", "{EEB0B4BA-7F6D-4687-9DF9-2FC6111B923E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{1C719FDF-47AF-4123-9444-816165CBB39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C719FDF-47AF-4123-9444-816165CBB39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C719FDF-47AF-4123-9444-816165CBB39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB0B4BA-7F6D-4687-9DF9-2FC6111B923E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB0B4BA-7F6D-4687-9DF9-2FC6111B923E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB0B4BA-7F6D-4687-9DF9-2FC6111B923E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB0B4BA-7F6D-4687-9DF9-2FC6111B923E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
