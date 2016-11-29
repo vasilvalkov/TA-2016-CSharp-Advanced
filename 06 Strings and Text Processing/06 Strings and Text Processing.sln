@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22_SeriesOfLetters", "22_Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_ForbiddenWords", "08_ForbiddenWords\08_ForbiddenWords.csproj", "{C1E22526-CDD6-405C-8DE7-532A4A862588}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_FormatNumber", "10_FormatNumber\10_FormatNumber.csproj", "{1C719FDF-47AF-4123-9444-816165CBB39D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{C1E22526-CDD6-405C-8DE7-532A4A862588}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1E22526-CDD6-405C-8DE7-532A4A862588}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1E22526-CDD6-405C-8DE7-532A4A862588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C719FDF-47AF-4123-9444-816165CBB39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C719FDF-47AF-4123-9444-816165CBB39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C719FDF-47AF-4123-9444-816165CBB39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C719FDF-47AF-4123-9444-816165CBB39D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
