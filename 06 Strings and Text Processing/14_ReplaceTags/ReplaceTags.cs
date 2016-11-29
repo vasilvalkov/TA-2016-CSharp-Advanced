@@ -14,33 +14,34 @@ namespace _14_ReplaceTags
 
         private static string MarkdownParse(string input)
         {
-            StringBuilder sb = new StringBuilder();            
-            sb.Append(input);
+            //string parsedHTML = Regex.Replace(text, "(<a href=\")(.*?)(\">)(.*?)(</a>)", "[$4]($2)");
+            StringBuilder parsedText = new StringBuilder();
+            parsedText.Append(input);
+            string aTagOpen = "<a href=\"";
+            string aTagClose = "</a>";
+            string urlTagClose = "\">";
 
-            while (true)
+            int startAnchor = input.IndexOf(aTagOpen);
+            int endAnchor = input.IndexOf(aTagClose);
+            int endUrl = input.IndexOf(urlTagClose);
+
+            while (endUrl > startAnchor + aTagOpen.Length)
             {
-                if (input.IndexOf("<a href=") < 0 ||
-                    input.IndexOf("\">") < 0 ||
-                    input.IndexOf("</a>") < 0)
+                if (input.IndexOf(aTagOpen) < 0 ||
+                    input.IndexOf(urlTagClose) < 0 ||
+                    input.IndexOf(aTagClose) < 0)
                     break;
 
-                string url = input.Substring(input.IndexOf("<a href=") + 9,
-                                             input.IndexOf("\">") - 1 - (input.IndexOf("<a href=") + 8));
+                string url = url = input.Substring(startAnchor + aTagOpen.Length, endUrl - (startAnchor + aTagOpen.Length));
+                string text = input.Substring(endUrl + urlTagClose.Length, endAnchor - (endUrl + urlTagClose.Length));
 
-                string text = input.Substring(input.IndexOf("\">") + 2,
-                                              input.IndexOf("</a>") - (input.IndexOf("\">") + 2));
+                parsedText.Remove(startAnchor, (endAnchor + aTagClose.Length) - startAnchor);
+                parsedText.Insert(startAnchor, string.Format("[{0}]({1})", text, url));
 
-                int startIndex = input.IndexOf("<a href=\"");
-
-                int endIndex = input.IndexOf("</a>") + 4;
-
-                sb.Remove(startIndex, endIndex - startIndex);
-                sb.Insert(startIndex, string.Format("[{0}]({1})", text, url));
-
-                input = sb.ToString();
+                input = parsedText.ToString();
             }
 
-            return sb.ToString();
+            return parsedText.ToString();
         }
     }
 }
