@@ -39,6 +39,27 @@ namespace _18_DatesFromTextInCanada
         private static List<DateTime> ExtractDates(string text, CultureInfo cult)
         {
             var dates = new List<DateTime>();
+            List<char> splitChars = PrepareSplitChars(text);
+
+            string[] splitText = text.Split(splitChars.ToArray(), StringSplitOptions.RemoveEmptyEntries);
+
+            splitChars.Add('.');
+
+            foreach (var item in splitText)
+            {
+                DateTime date = new DateTime();
+
+                if (DateTime.TryParseExact(item.Trim(splitChars.ToArray()), "dd.MM.yyyy", cult, DateTimeStyles.None, out date))
+                {
+                    dates.Add(date);
+                }
+            }
+
+            return dates;
+        }
+
+        private static List<char> PrepareSplitChars(string text)
+        {
             var splitChars = new List<char>();
 
             foreach (var symbol in text)
@@ -48,22 +69,8 @@ namespace _18_DatesFromTextInCanada
                     splitChars.Add(symbol);
                 }
             }
-            
-            string[] splitText = text.Split(splitChars.ToArray(), StringSplitOptions.RemoveEmptyEntries);
 
-            splitChars.Add('.');
-
-            foreach (var item in splitText)
-            {
-                DateTime date = new DateTime();                
-
-                if (DateTime.TryParseExact(item.Trim(splitChars.ToArray()),"dd.MM.yyyy", cult, DateTimeStyles.None, out date))
-                {
-                    dates.Add(date);
-                }
-            }
-
-            return dates;
+            return splitChars;
         }
     }
 }
