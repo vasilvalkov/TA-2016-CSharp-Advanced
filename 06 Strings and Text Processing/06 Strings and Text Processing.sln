@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_DateInBulgarian", "16_Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_ExtractEmails", "17_ExtractEmails\17_ExtractEmails.csproj", "{46F69D28-6D05-4D96-9287-8E05FC2A6A14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_DatesFromTextInCanada", "18_DatesFromTextInCanada\18_DatesFromTextInCanada.csproj", "{BFEA814A-1B78-4CBF-BDE3-F61F3E94A5D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{46F69D28-6D05-4D96-9287-8E05FC2A6A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46F69D28-6D05-4D96-9287-8E05FC2A6A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46F69D28-6D05-4D96-9287-8E05FC2A6A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFEA814A-1B78-4CBF-BDE3-F61F3E94A5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEA814A-1B78-4CBF-BDE3-F61F3E94A5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEA814A-1B78-4CBF-BDE3-F61F3E94A5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEA814A-1B78-4CBF-BDE3-F61F3E94A5D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
