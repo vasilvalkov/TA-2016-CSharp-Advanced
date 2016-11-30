@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 
 namespace _18_DatesFromTextInCanada
 {
@@ -41,7 +42,7 @@ namespace _18_DatesFromTextInCanada
             var dates = new List<DateTime>();
             List<char> splitChars = PrepareSplitChars(text);
 
-            string[] splitText = text.Split(splitChars.ToArray(), StringSplitOptions.RemoveEmptyEntries);
+            string[] splitText = text.Split(splitChars.Distinct().ToArray(), StringSplitOptions.RemoveEmptyEntries);
 
             splitChars.Add('.');
 
