@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_DatesFromTextInCanada", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_Palindromes", "19_Palindromes\19_Palindromes.csproj", "{73BD3B46-BAAA-4350-9B3B-0EC09B67E231}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20_LettersCount", "20_LettersCount\20_LettersCount.csproj", "{76785AF1-ABF6-4F47-9BF0-00B893B22416}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{73BD3B46-BAAA-4350-9B3B-0EC09B67E231}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73BD3B46-BAAA-4350-9B3B-0EC09B67E231}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73BD3B46-BAAA-4350-9B3B-0EC09B67E231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76785AF1-ABF6-4F47-9BF0-00B893B22416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76785AF1-ABF6-4F47-9BF0-00B893B22416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76785AF1-ABF6-4F47-9BF0-00B893B22416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76785AF1-ABF6-4F47-9BF0-00B893B22416}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
