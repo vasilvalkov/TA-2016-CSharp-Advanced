@@ -6,6 +6,7 @@ One day, after eating too much pizza, the **master-programmers** Niki, Toni and 
 So, back to our story – somewhere in between the wormholes, dark matter and a lot of space-flying Zerg Mutalisks, there was another universe almost **identical** to ours. The very same day after eating too much spaghetti, Ikin, Inot and Ovi (being well trained Terran Ghosts), decided to send telepathically an **encrypted numerical message** to our well-known software engineers.
 
 The sent message is made of the following digits:
+|     |     |
 |-----|-----|
 | 0   | CHU |
 | 1   | TEL |
