@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_MultiverseCommunication"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_MagicWords", "03_MagicWords\03_MagicWords.csproj", "{BF352E3F-B1DB-429E-8B74-43BDFC62EF11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_CalculationProblem", "04_CalculationProblem\04_CalculationProblem.csproj", "{DE933B17-4A13-4C2D-9E96-B46AFAEC90A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BF352E3F-B1DB-429E-8B74-43BDFC62EF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF352E3F-B1DB-429E-8B74-43BDFC62EF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF352E3F-B1DB-429E-8B74-43BDFC62EF11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE933B17-4A13-4C2D-9E96-B46AFAEC90A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE933B17-4A13-4C2D-9E96-B46AFAEC90A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE933B17-4A13-4C2D-9E96-B46AFAEC90A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE933B17-4A13-4C2D-9E96-B46AFAEC90A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
