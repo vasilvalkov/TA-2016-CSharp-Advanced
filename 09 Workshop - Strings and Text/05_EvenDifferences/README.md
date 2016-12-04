@@ -48,7 +48,7 @@ We start from the second number (6) and find the absolute difference between 1 a
 
 2 is even, but if we do even jump (move 2 positions right) we will reach out of the sequence, so our algorithm stops here.
 
-1**<sup>5</sup>**6**<sup>2</sup>**8**<sup>-</sup>**10**<sup>7</sup>**3**<sup>2</sup>**1**<sup>-</sup>**1
+1<sup>**5**</sup>6<sup>**2**</sup>8<sup>**-**</sup>10<sup>**7**</sup>3<sup>**2**</sup>1<sup>**-**</sup>1
 
 We have found 4 absolute differences during the algorithm (**5**, **2**, **7** and **2**). Only two of them are even (2 and 2) so we sum them and output the number **4**.
 
@@ -71,20 +71,20 @@ On the only output line write the sum of all even absolute differences found dur
 ### Constraints
 
 -   There will be between 2 and 200 numbers in the input, inclusive.
--   Each number will be between -<span id="OLE_LINK1" class="anchor"><span id="OLE_LINK2" class="anchor"><span id="OLE_LINK3" class="anchor"></span></span></span>2 000 000 000 and +<span id="OLE_LINK4" class="anchor"><span id="OLE_LINK5" class="anchor"></span></span>2 000 000 000.
+-   Each number will be between -2 000 000 000 and 2 000 000 000.
 -   Allowed working time for your program: 0.1 seconds.
-s-   Allowed memory: 16 MB.
+-   Allowed memory: 16 MB.
 
 ### Examples
 
-|                   |                    |                                                                                                             |
-|-------------------|--------------------|-------------------------------------------------------------------------------------------------------------|
-| **Example input** | **Example output** | **Explanation**                                                                                             |
-| 1 6 8 10 3 1 1    | 4                  | 1**<sup>5</sup>**6**<sup>2</sup>**8**<sup>-</sup>**10**<sup>7</sup>**3**<sup>2</sup>**1**<sup>-</sup>**1    
-                                                                                                                
-   **2+2=4**                                                                                                    |
-| -5 5 1 8 -4 1 2   | 22                 | -5**<sup>10</sup>**5**<sup>-</sup>**1**<sup>7</sup>**8**<sup>12</sup>**-4**<sup>-</sup>**1**<sup>1</sup>**2 
-                                                                                                                
-   **10+12=22**                                                                                                 |
+| **Example input** | **Example output** | **Explanation**  |
+|-------------------|--------------------|------------------|
+| 1 6 8 10 3 1 1    | 4  |1**<sup>5</sup>**6**<sup>2</sup>**8**<sup>-</sup>**10**<sup>7</sup>**3**<sup>2</sup>**1**<sup>-</sup>**1
+**2+2=4** |
+
+| **Example input** | **Example output** | **Explanation**  |
+|-------------------|--------------------|------------------|
+| -5 5 1 8 -4 1 2   | 22                 | -5**<sup>10</sup>**5**<sup>-</sup>**1**<sup>7</sup>**8**<sup>12</sup>**-4**<sup>-</sup>**1**<sup>1</sup>**2
+**10+12=22** |
 
 **Mew.**
