@@ -1,7 +1,7 @@
 Problem 5 – Even Differences
 ----------------------------
 
-![](/imgs/cat.png)Sid is a small and smart kitten.
+![](./imgs/cat.png)Sid is a small and smart kitten.
 
 She loves to eat programming books (and read them).
 
@@ -56,16 +56,13 @@ You are given sequences of numbers. **Implement the given algorithm and output t
 
 ### Input
 
-The input data should be read from the console.
-
-The sequence will be given on the only input line. All numbers will be separated by a single space (‘ ‘).
-
+The input data should be read from the console.  
+The sequence will be given on the only input line. All numbers will be separated by a single space (‘ ‘).  
 The input data will always be valid and in the format described. There is no need to check it explicitly.
 
 ### Output
 
-The output data should be printed on the console.
-
+The output data should be printed on the console.</br>
 On the only output line write the sum of all even absolute differences found during the algorithm.
 
 ### Constraints
@@ -79,12 +76,10 @@ On the only output line write the sum of all even absolute differences found dur
 
 | **Example input** | **Example output** | **Explanation**  |
 |-------------------|--------------------|------------------|
-| 1 6 8 10 3 1 1    | 4  |1**<sup>5</sup>**6**<sup>2</sup>**8**<sup>-</sup>**10**<sup>7</sup>**3**<sup>2</sup>**1**<sup>-</sup>**1
-**2+2=4** |
+| 1 6 8 10 3 1 1    | 4  |1**<sup>5</sup>**6**<sup>2</sup>**8**<sup>-</sup>**10**<sup>7</sup>**3**<sup>2</sup>**1**<sup>-</sup>**1</br>**2+2=4** |
 
 | **Example input** | **Example output** | **Explanation**  |
 |-------------------|--------------------|------------------|
-| -5 5 1 8 -4 1 2   | 22                 | -5**<sup>10</sup>**5**<sup>-</sup>**1**<sup>7</sup>**8**<sup>12</sup>**-4**<sup>-</sup>**1**<sup>1</sup>**2
-**10+12=22** |
+| -5 5 1 8 -4 1 2   | 22                 | -5**<sup>10</sup>**5**<sup>-</sup>**1**<sup>7</sup>**8**<sup>12</sup>**-4**<sup>-</sup>**1**<sup>1</sup>**2</br>**10+12=22** |
 
 **Mew.**
