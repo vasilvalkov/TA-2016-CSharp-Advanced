@@ -7,8 +7,9 @@ So, back to our story – somewhere in between the wormholes, dark matter and a 
 
 The sent message is made of the following digits:
 
-| 0   | CHU |
+|     |     |
 |-----|-----|
+| 0   | CHU |
 | 1   | TEL |
 | 2   | OFT |
 | 3   | IVA |
