@@ -22,7 +22,7 @@ The sent message is made of the following digits:
 | 11  | YLO |
 | 12  | PLA |
 
-### The message is written as a sequence of digits. The last digit of the number (the most right one) has a value as shown in the above table. The next digit on the left has a value 13 times bigger than the shown in the above table, the next digit on the left has 13\*13 times bigger value than the shown in the table and so on. Since our masters are too lazy after so much pizza and do not want to think (and code C\# too), you task is to translate the message into its decimal representation. With your help, our heroes can fall asleep calmly, knowing other universes exist somewhere.
+The message is written as a **sequence of digits**. The last digit of the number (the most right one) has a value as shown in the above table. The next digit on the left has a value **13** times bigger than the shown in the above table, the next digit on the left has **13\*13** times bigger value than the shown in the table and so on. Since our masters are too lazy after so much pizza and do not want to think (and code C\# too), you task is to **translate the message into its decimal representation**. With your help, our heroes can fall asleep calmly, knowing other universes exist somewhere.
 
 ### Input
 
@@ -57,6 +57,6 @@ The output data consists of a single line holding the calculated decimal represe
 |                 |            |                                                                                                                                                                                                                                                    |
 |-----------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Input**       | **Output** | **Explanation**                                                                                                                                                                                                                                    |
-| TELERIK-ACADEMY | 45569      | From the table **TEL** means **1**, **ERI** means **7**, **K-A** means **9**, **CAD** means **8** and **EMY** means **4** in 13<sup>th</sup> based numeral system. Message is **17984**. After converting it to decimal – the answer is **45569**. |
+| TELERIK-/-ACADEMY | 45569      | From the table **TEL** means **1**, **ERI** means **7**, **K-A** means **9**, **CAD** means **8** and **EMY** means **4** in 13<sup>th</sup> based numeral system. Message is **17984**. After converting it to decimal – the answer is **45569**. |
 
 
