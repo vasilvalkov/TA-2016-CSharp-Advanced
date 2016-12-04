@@ -7,3 +7,4 @@ Workshop: String and text
 1. [Multiverse Communication](./02_MultiverseCommunication)
 1. [Magic Words](./03_MagicWords)
 1. [Calculation Problem](./04_CalculationProblem)
+1. [Even Differences](./05_EvenDifferences)
