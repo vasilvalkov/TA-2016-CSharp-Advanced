@@ -6,8 +6,9 @@ One day, after eating too much pizza, the **master-programmers** Niki, Toni and 
 So, back to our story – somewhere in between the wormholes, dark matter and a lot of space-flying Zerg Mutalisks, there was another universe almost **identical** to ours. The very same day after eating too much spaghetti, Ikin, Inot and Ovi (being well trained Terran Ghosts), decided to send telepathically an **encrypted numerical message** to our well-known software engineers.
 
 The sent message is made of the following digits:
-| 0   | CHU |
+|     |     |
 |-----|-----|
+| 0   | CHU |
 | 1   | TEL |
 | 2   | OFT |
 | 3   | IVA |
@@ -41,15 +42,15 @@ The output data consists of a single line holding the calculated decimal represe
 
 ### Examples
 | Input | Output | Explanation |
-|-------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------|--------|-------------|
 | OFT   | 2      | From the table **OFT** means **2** in 13<sup>th</sup> based numeral system. Message is **2**. After converting it to decimal – the answer is **2**. |
 
 | Input     | Output     | Explanation |
-|-----------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------|------------|-------------|
 | IVAYLO    | 50         | From the table **IVA** means **3** and **YLO** means **B (11)** in 13<sup>th</sup> based numeral system. Message is **3B**. After converting it to decimal – the answer is **50**. |
 
 | Input | Output | Explanation |
-|-------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------|--------|-------------|
 | TELERIK&#8209;ACADEMY | 45569      | From the table **TEL** means **1**, **ERI** means **7**, **K-A** means **9**, **CAD** means **8** and **EMY** means **4** in 13<sup>th</sup> based numeral system. Message is **17984**. After converting it to decimal – the answer is **45569**. |
 
 
