@@ -1,4 +1,4 @@
-Problem 1 – Multiverse Communication
+Problem 2 – Multiverse Communication
 ------------------------------------
 
 One day, after eating too much pizza, the **master-programmers** Niki, Toni and Ivo started talking about “highly-intelligent” topics – how the universe **started**, who created it, are there other **advanced** forms of life, what kind of girls are hot and so on. Suddenly they received an **answer** from beyond to one of the biggest mysteries for the mankind – there is more than one universe in the space-time continuum! As a matter of fact – they are **infinite** – a multiverse to rule them all! How cool is that, huh?
@@ -37,9 +37,7 @@ The output data consists of a single line holding the calculated decimal represe
 ### Constraints
 
 -   The input number will have between 1 and 9 digits.
-
 -   Allowed working time for your program: 0.1 seconds.
-
 -   Allowed memory: 16 MB.
 
 ### Examples
