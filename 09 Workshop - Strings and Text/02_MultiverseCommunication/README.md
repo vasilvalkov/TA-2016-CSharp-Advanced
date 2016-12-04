@@ -57,6 +57,6 @@ The output data consists of a single line holding the calculated decimal represe
 |                 |            |                                                                                                                                                                                                                                                    |
 |-----------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Input**       | **Output** | **Explanation**                                                                                                                                                                                                                                    |
-| TELERIK-/-ACADEMY | 45569      | From the table **TEL** means **1**, **ERI** means **7**, **K-A** means **9**, **CAD** means **8** and **EMY** means **4** in 13<sup>th</sup> based numeral system. Message is **17984**. After converting it to decimal – the answer is **45569**. |
+| TELERIK-\-ACADEMY | 45569      | From the table **TEL** means **1**, **ERI** means **7**, **K-A** means **9**, **CAD** means **8** and **EMY** means **4** in 13<sup>th</sup> based numeral system. Message is **17984**. After converting it to decimal – the answer is **45569**. |
 
 
