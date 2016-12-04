@@ -6,9 +6,8 @@ One day, after eating too much pizza, the **master-programmers** Niki, Toni and 
 So, back to our story – somewhere in between the wormholes, dark matter and a lot of space-flying Zerg Mutalisks, there was another universe almost **identical** to ours. The very same day after eating too much spaghetti, Ikin, Inot and Ovi (being well trained Terran Ghosts), decided to send telepathically an **encrypted numerical message** to our well-known software engineers.
 
 The sent message is made of the following digits:
-|     |     |
-|-----|-----|
 | 0   | CHU |
+|-----|-----|
 | 1   | TEL |
 | 2   | OFT |
 | 3   | IVA |
@@ -42,7 +41,7 @@ The output data consists of a single line holding the calculated decimal represe
 
 ### Examples
 | Input | Output | Explanation |
-|-------|--------|-------------|
+|-------|--------|:------------|
 | OFT   | 2      | From the table **OFT** means **2** in 13<sup>th</sup> based numeral system. Message is **2**. After converting it to decimal – the answer is **2**. |
 
 | Input     | Output     | Explanation |
