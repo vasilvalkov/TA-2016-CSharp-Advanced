@@ -8,7 +8,6 @@ So, back to our story – somewhere in between the wormholes, dark matter and a 
 The sent message is made of the following digits:
 
 | 0   | CHU |
-|-----|-----|
 | 1   | TEL |
 | 2   | OFT |
 | 3   | IVA |
@@ -27,7 +26,6 @@ The message is written as a **sequence of digits**. The last digit of the number
 ### Input
 
 The input data consists of a single line – the message from the parallel universe.
-
 The input data will always be valid and in the described format. There is no need to check it explicitly.
 
 ### Output
