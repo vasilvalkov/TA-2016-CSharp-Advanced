@@ -65,13 +65,13 @@ Print the sum of cells contained in the path of pawn.
 
 | **Input** | **Output** | **Explanation** |
 |-----------|------------|-----------------|
-|6 7  
+|6 7        | 150        | In the example  |
 5  
 UR 5  
 RD 2  
 DL 3  
 LU 6  
-DR 5        | 150        | In the example |
+DR 5        
 
 | **Input** | **Output** | **Explanation** |
 |-----------|------------|-----------------|
