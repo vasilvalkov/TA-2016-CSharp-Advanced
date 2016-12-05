@@ -65,39 +65,13 @@ Print the sum of cells contained in the path of pawn.
 
 | **Input** | **Output** | **Explanation** |
 |-----------|------------|-----------------|
-|6 7        | 150        | In the example  |
-|5          |
-|UR 5       |
-|RD 2       |  
-|DL 3       |  
-|LU 6       |  
-|DR 5       |        
+|6 7</br>5</br>UR 5</br>RD 2</br>DL 3</br>LU 6</br>DR 5       | 150        | In the example  |
 
 | **Input** | **Output** | **Explanation** |
 |-----------|------------|-----------------|
-|2 2  		| 6          | ![](./imgs/example2.png)The only values that can be collected are 0 and 6, and they are collected only once  |
-10  		|
-UR 2  		|
-LD 100  	|
-DR 500  	|
-UL 500  	|
-UL 5  		|
-LD 120  	|
-RD 123  	|
-LU 321  	|
-UR 2  		|
-LD 100      |
+|2 2</br>10</br>UR 2</br>LD 100</br>DR 500</br>UL 500</br>UL 5</br>LD 120</br>RD 123</br>LU 321</br>UR 2</br>LD 100	| 6          | ![](./imgs/example2.png)The only values that can be collected are 0 and 6, and they are collected only once  |
+
 
 | **Input** | **Output** | **Explanation** |
 |-----------|------------|-----------------|
-| 3 3  		| 30         | ![](./imgs/example3.png)-	Move UP-RIGHT, has only 3 moves and values 0, 6 and 12. All values are not yet collected, so the pawn collects them.  
--   Move DOWN-LEFT, has 2 moves and values 12 and 6. Both values are already collected, so the pawn collects nothing.  
--   Move DOWN-RIGHT, has only 2 moves and values 6 and 6. One of values is already collected, so the pawn collects only 6.  
--   Move UP-LEFT, has only 3 moves and values 6, 6 and 6. Two of the values are already collected, so the pawn collects only 6.   
-
-The sum is: 0 + 6 + 12 + 6 + 6 = 30 |
-4  			|
-UR 22  		|
-DL 2  		|
-DR 8  		|
-UL 75      	|
+| 3 3</br>4</br>UR 22</br>DL 2</br>DR 8</br>UL 75	| 30         | ![](./imgs/example3.png)-	Move UP-RIGHT, has only 3 moves and values 0, 6 and 12. All values are not yet collected, so the pawn collects them.</br>-   Move DOWN-LEFT, has 2 moves and values 12 and 6. Both values are already collected, so the pawn collects nothing.</br>-   Move DOWN-RIGHT, has only 2 moves and values 6 and 6. One of values is already collected, so the pawn collects only 6.</br>-   Move UP-LEFT, has only 3 moves and values 6, 6 and 6. Two of the values are already collected, so the pawn collects only 6.</br></br>The sum is: 0 + 6 + 12 + 6 + 6 = 30 |
