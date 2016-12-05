@@ -10,7 +10,7 @@ namespace _06_LoverOf3
         static ulong cols = 0;
         static ulong[,] field;
         static ulong[] pos = new ulong[2];
-
+        
         static void Main()
         {
             ulong[] dim = Console.ReadLine().Split(' ').Select(ulong.Parse).ToArray();
