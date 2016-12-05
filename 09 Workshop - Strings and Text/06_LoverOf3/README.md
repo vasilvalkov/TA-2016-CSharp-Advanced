@@ -17,22 +17,20 @@ The value of each cell is calculated only once, i.e. if the pawn visits the same
 
 If the pawn is about to perform K moves in the given direction, but there are less than K cells before the edge of the field, the pawn performs as many moves as are available and stops at the edge of the field.
 
-**Example**:
-![](./imgs/example.png "Example")
+>**Example**:</br>![](./imgs/example.png "Example")
 
-You are given a field with size 6x7, and the directions and moves:
+>You are given a field with size 6x7, and the directions and moves:
 
--   5 moves UP-RIGHT
--   2 moves DOWN-RIGHT
--   3 moves DOWN-LEFT
--   6 moves UP-LEFT
--   5 moves DOWN-RIGHT
+>-   2 moves DOWN-RIGHT
+>-   3 moves DOWN-LEFT
+>-   6 moves UP-LEFT
+>-   5 moves DOWN-RIGHT
 
-The pawn collects values: 0, 6, 12, 18, 24, 24, 18, 12, 12, 12 and 12. Their sum is 150.
+>The pawn collects values: 0, 6, 12, 18, 24, 24, 18, 12, 12, 12 and 12. Their sum is 150.
 
 Help Pesho in the calculation of the result!
 
->### Input
+### Input
 
 The input data is given at the standard input, i.e. the console.  
 On the first line you will find **the dimensions of the field** **R and C**, separated with a single space.  
@@ -44,7 +42,7 @@ On the next N lines you will find a **string D** and a **number K**, separated w
 
 The input will be valid, in the specified format, within the constraints given below. There is no need to check the input data explicitly.
 
->### Output
+### Output
 
 Print the sum of cells contained in the path of pawn.
 
