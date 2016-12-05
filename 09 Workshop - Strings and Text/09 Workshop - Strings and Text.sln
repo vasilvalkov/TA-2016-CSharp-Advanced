@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_EvenDifferences", "05_Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_LoverOf3", "06_LoverOf3\06_LoverOf3.csproj", "{66D7DD5F-EF7B-4E0E-ADEB-2068EF05EF62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_BadCat", "07_BadCat\07_BadCat.csproj", "{296FC4AC-671A-4241-A1A2-3F4D35494460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{66D7DD5F-EF7B-4E0E-ADEB-2068EF05EF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D7DD5F-EF7B-4E0E-ADEB-2068EF05EF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D7DD5F-EF7B-4E0E-ADEB-2068EF05EF62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{296FC4AC-671A-4241-A1A2-3F4D35494460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296FC4AC-671A-4241-A1A2-3F4D35494460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296FC4AC-671A-4241-A1A2-3F4D35494460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296FC4AC-671A-4241-A1A2-3F4D35494460}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

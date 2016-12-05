@@ -71,17 +71,18 @@ namespace _01_DecodeAndDecrypt
 
         private static string Decrypt(string encryptedText, string cipher)
         {
-            encryptedText = encryptedText.Substring(0, encryptedText.IndexOf(cipher));
-            int length = encryptedText.Length > cipher.Length ? encryptedText.Length : cipher.Length;
+            encryptedText = encryptedText.Substring(0, encryptedText.Length - cipher.Length);
             char[] result = encryptedText.ToCharArray();
+            int length = result.Length > cipher.Length ? result.Length : cipher.Length;
 
             for (int i = 0; i < length; i++)
             {
                 var letter = result[i % result.Length] - 'A';
                 var code = cipher[i % cipher.Length] - 'A';
-                char xor = (char)((letter ^ code) + 'A');
 
-                result[i % result.Length] = xor;
+                var xor = letter ^ code;
+
+                result[i % result.Length] = (char)(xor + 'A');
             }
 
             return string.Join("", result);
