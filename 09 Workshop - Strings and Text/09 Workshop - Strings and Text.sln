@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_CalculationProblem", "04
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_EvenDifferences", "05_EvenDifferences\05_EvenDifferences.csproj", "{2A32731A-DE52-49E3-8ECD-22FE5E1C802A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_LoverOf3", "06_LoverOf3\06_LoverOf3.csproj", "{66D7DD5F-EF7B-4E0E-ADEB-2068EF05EF62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2A32731A-DE52-49E3-8ECD-22FE5E1C802A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A32731A-DE52-49E3-8ECD-22FE5E1C802A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A32731A-DE52-49E3-8ECD-22FE5E1C802A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D7DD5F-EF7B-4E0E-ADEB-2068EF05EF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D7DD5F-EF7B-4E0E-ADEB-2068EF05EF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D7DD5F-EF7B-4E0E-ADEB-2068EF05EF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D7DD5F-EF7B-4E0E-ADEB-2068EF05EF62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,14 +3,14 @@ Problem 6 – Lover of 3
 
 Pesho is a lover of 3. He loves everything that is devisable by 3. He loves 3 so much, he created his own game with threes. Yet, Pesho is not a bright one, so he cannot calculate the result in his own game. The game is as follows:
 
-![](./imgs/field.png)The game has a rectangular field. The field is filled with numbers divisible by 3 as follows:
-
+The game has a rectangular field. The field is filled with numbers divisible by 3 as follows:</br>
+![](./imgs/field.png)</br>
 -   The bottom left corner holds the value 0
 -   The next cell above holds value of 3, the next cell above holds of 6, etc…
 -   The second cell the bottom row holds a value of 3, the cell next to it holds a value of 6
 
-![](./imgs/moves.png)You have a pawn on the field. The pawn can only move to the cells that are diagonally next to it. The possible directions are UP-RIGHT, DOWN-RIGHT, UP-LEFT and DOWN-LEFT.
-
+You have a pawn on the field. The pawn can only move to the cells that are diagonally next to it. The possible directions are UP-RIGHT, DOWN-RIGHT, UP-LEFT and DOWN-LEFT.</br>
+![](./imgs/moves.png)</br>
 Given that initially the pawn starts at the bottom left corner, a list of directions and how many moves the pawn is about to perform in each direction, calculate the sum of the cells that the pawn has to go through.
 
 The value of each cell is calculated only once, i.e. if the pawn visits the same cell more than once, its value is added to the result only the first time (the value is collected).
