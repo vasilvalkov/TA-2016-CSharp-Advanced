@@ -17,8 +17,8 @@ The value of each cell is calculated only once, i.e. if the pawn visits the same
 
 If the pawn is about to perform K moves in the given direction, but there are less than K cells before the edge of the field, the pawn performs as many moves as are available and stops at the edge of the field.
 
->**Example**:</br>![](./imgs/example.png "Example")
-
+>**Example**:
+</br>![](./imgs/example.png "Example")
 >You are given a field with size 6x7, and the directions and moves:
 
 >-   2 moves DOWN-RIGHT
