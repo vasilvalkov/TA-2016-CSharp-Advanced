@@ -60,7 +60,7 @@ Print the sum of cells contained in the path of pawn.
 -   Allowed working time for your program: 0.15 seconds.
 -   Allowed memory: 16 MB.
 
-### Example
+### Examples
 
 | **Input** | **Output** | **Explanation** |
 |-----------|------------|-----------------|
@@ -68,7 +68,7 @@ Print the sum of cells contained in the path of pawn.
 
 | **Input** | **Output** | **Explanation** |
 |-----------|------------|-----------------|
-|2 2</br>10</br>UR 2</br>LD 100</br>DR 500</br>UL 500</br>UL 5</br>LD 120</br>RD 123</br>LU 321</br>UR 2</br>LD 100	| 6          | ![](./imgs/example2.png)The only values that can be collected are 0 and 6, and they are collected only once  |
+|2 2</br>10</br>UR 2</br>LD 100</br>DR 500</br>UL 500</br>UL 5</br>LD 120</br>RD 123</br>LU 321</br>UR 2</br>LD 100	| 6          | ![](./imgs/example2.png)</br>The only values that can be collected are 0 and 6, and they are collected only once  |
 
 | **Input** | **Output** | **Explanation** |
 |-----------|------------|-----------------|
