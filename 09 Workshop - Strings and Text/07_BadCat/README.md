@@ -10,18 +10,14 @@ There is always a possible solution.
 
 ### Input
 
-The input data should be read from the console.
-
-On the first line there will be the number **N**.
-
-On each of the next **N** lines there will be a string in the format “***X is before Y***” or “***X is after Y***”. **X** and **Y** will be valid digits (‘0’ – ‘9’).
-
+The input data should be read from the console.</br?
+On the first line there will be the number **N**.</br>
+On each of the next **N** lines there will be a string in the format “***X is before Y***” or “***X is after Y***”. **X** and **Y** will be valid digits (‘0’ – ‘9’).</br>
 The input data will always be valid and in the format described. There is no need to check it explicitly.
 
 ### Output
 
-The output data should be printed on the console.
-
+The output data should be printed on the console.</br>
 On the only output line write the smallest possible number that corresponds to the rules described in the input.
 
 ### Constraints
