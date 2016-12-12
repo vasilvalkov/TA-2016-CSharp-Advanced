@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_LineNumbers", "03_LineNu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_CompareTextFiles", "04_CompareTextFiles\04_CompareTextFiles.csproj", "{430087CF-802B-4CEB-AB02-2024C08A4B5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_MaximalAreaSum", "05_MaximalAreaSum\05_MaximalAreaSum.csproj", "{CB2D04EA-1F66-4625-AE8C-E16DD9F4F3B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{430087CF-802B-4CEB-AB02-2024C08A4B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{430087CF-802B-4CEB-AB02-2024C08A4B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{430087CF-802B-4CEB-AB02-2024C08A4B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2D04EA-1F66-4625-AE8C-E16DD9F4F3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2D04EA-1F66-4625-AE8C-E16DD9F4F3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2D04EA-1F66-4625-AE8C-E16DD9F4F3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2D04EA-1F66-4625-AE8C-E16DD9F4F3B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
