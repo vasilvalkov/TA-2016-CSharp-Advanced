@@ -13,6 +13,3 @@
 1. [Replace whole word](./08_ReplaceWholeWord)
 1. [Delete odd lines](./09_DeleteOddLines)
 1. [Extract text from XML](./10_ExtractTextFromXML)
-1. [Prefix "test"](./11_PrefixTest)
-1. [Remove words](./12_RemoveWords)
-1. [Count words](./13_CountWords)
