@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_SaveSortedNames", "06_Sa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_ReplaceSubstring", "07_ReplaceSubstring\07_ReplaceSubstring.csproj", "{3801B41D-B7FE-4759-AFD7-4FFBDC86F011}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_ReplaceWholeWord", "08_ReplaceWholeWord\08_ReplaceWholeWord.csproj", "{B6139601-E285-436E-8BA3-1998BBE37A98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3801B41D-B7FE-4759-AFD7-4FFBDC86F011}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3801B41D-B7FE-4759-AFD7-4FFBDC86F011}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3801B41D-B7FE-4759-AFD7-4FFBDC86F011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6139601-E285-436E-8BA3-1998BBE37A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6139601-E285-436E-8BA3-1998BBE37A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6139601-E285-436E-8BA3-1998BBE37A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6139601-E285-436E-8BA3-1998BBE37A98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
