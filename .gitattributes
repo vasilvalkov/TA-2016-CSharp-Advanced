@@ -63,4 +63,4 @@
 #*.RTF   diff=astextplain
 ###############################################################################
 #$ cat .gitattributes
-#*.rb linguist-language=C#
+#*.rb linguist-language=csharp
